@@ -1,16 +1,38 @@
-# ml-opt-app
+# 🤖 Machine Learning Hyperparameter Optimization App (Regression Edition)
 
-# Watch the tutorial video
+This web app provides a **simple and interactive interface** to perform hyperparameter tuning for regression models using **Random Forest Regressor**. Built with [Streamlit](https://streamlit.io/) and [Scikit-learn](https://scikit-learn.org/), it allows users to upload their dataset, tune hyperparameters, and visualize the impact on model performance — all in the browser.
 
-[How to Build a Machine Learning Hyperparameter Optimization App | Streamlit #14](https://youtu.be/HT2WHLgYpxY)
+---
 
-<a href="https://youtu.be/HT2WHLgYpxY"><img src="http://img.youtube.com/vi/HT2WHLgYpxY/0.jpg" alt="How to Build a ML Hyperparameter Optimization App (Streamlit + Scikit-learn + Python)" title="How to Build a ML Hyperparameter Optimization App (Streamlit + Scikit-learn + Python)" width="400" /></a>
+## 📌 Features
 
-# Demo
+- Upload your own CSV dataset or use a built-in example (Diabetes dataset)
+- Select and tune key Random Forest hyperparameters:
+  - `n_estimators`
+  - `max_features`
+  - `min_samples_split`
+  - `min_samples_leaf`
+  - `criterion` (`mse`, `mae`)
+  - `bootstrap`
+  - `oob_score`
+  - `random_state`
+- Perform **Grid Search Cross Validation**
+- View performance metrics: **R² Score** and **Mean Squared Error**
+- 3D interactive surface plot of hyperparameter tuning results using Plotly
+- Download results as CSV
 
-Launch the web app:
+---
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/ml-opt-app/main/ml-opt-app.py)
+## 🧰 Technologies Used
+
+- Python 3.8+
+- Streamlit
+- Scikit-learn
+- NumPy
+- Pandas
+- Plotly
+
+---
 
 # Reproducing this web app
 To recreate this web app on your own computer, do the following.
