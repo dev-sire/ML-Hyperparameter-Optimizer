@@ -51,7 +51,7 @@ conda activate mlopt
 Download requirements.txt file
 
 ```
-wget https://raw.githubusercontent.com/dataprofessor/ml-opt-app/main/requirements.txt
+wget https://raw.githubusercontent.com/dev-sire/ML-Hyperparameter-Optimizer/main/requirements.txt
 
 ```
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 ###  Download and unzip contents from GitHub repo
 
-Download and unzip contents from https://github.com/dataprofessor/ml-opt-app/archive/main.zip
+Download and unzip contents from https://github.com/dev-sire/ML-Hyperparameter-Optimizer/archive/main.zip
 
 ###  Launch the app
 

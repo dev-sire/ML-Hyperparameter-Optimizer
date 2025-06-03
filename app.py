@@ -48,7 +48,7 @@ parameter_min_samples_leaf = st.sidebar.slider('Minimum number of samples requir
 
 st.sidebar.subheader('General Parameters')
 parameter_random_state = st.sidebar.slider('Seed number (random_state)', 0, 1000, 42, 1)
-parameter_criterion = st.sidebar.select_slider('Performance measure (criterion)', options=['mse', 'mae'])
+parameter_criterion = st.sidebar.select_slider('Performance measure (criterion)', options=['squared_error', 'absolute_error'])
 parameter_bootstrap = st.sidebar.select_slider('Bootstrap samples when building trees (bootstrap)', options=[True, False])
 parameter_oob_score = st.sidebar.select_slider('Whether to use out-of-bag samples to estimate the R^2 on unseen data (oob_score)', options=[False, True])
 parameter_n_jobs = st.sidebar.select_slider('Number of jobs to run in parallel (n_jobs)', options=[1, -1])
@@ -122,7 +122,7 @@ def build_model(df):
     # Pivoting the data
     grid_reset = grid_contour.reset_index()
     grid_reset.columns = ['max_features', 'n_estimators', 'R2']
-    grid_pivot = grid_reset.pivot('max_features', 'n_estimators')
+    grid_pivot = grid_reset.pivot(index='max_features', columns='n_estimators')
     x = grid_pivot.columns.levels[1].values
     y = grid_pivot.index.values
     z = grid_pivot.values
