@@ -18,7 +18,7 @@ st.set_page_config(page_title='The Machine Learning Hyperparameter Optimization 
 #---------------------------------#
 st.write("""
 # The Machine Learning Hyperparameter Optimization App
-**(Regression Edition)**
+**Developed By Aman Shahid & Ayan Atif**
 
 In this implementation, the *RandomForestRegressor()* function is used in this app for build a regression model using the **Random Forest** algorithm.
 
